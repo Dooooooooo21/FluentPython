@@ -40,3 +40,8 @@ print(deck.__getitem__(0))
 # 随机抽牌
 print(choice(deck))
 print(choices(deck, k=5))
+
+# 格式化字符串
+print('%f' % 1.11)
+
+print('{0:f}{1}'.format(20, ' hello world'))
