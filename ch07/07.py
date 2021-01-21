@@ -5,6 +5,10 @@
 # @File    : 07.py
 # @Desc    :
 
+def split_line():
+    print('-----------------------------------------------------------------------')
+
+
 def deco(func):
     def inner():
         print('inner running')
@@ -18,8 +22,9 @@ def target():
     print('running target')
 
 
-# print(target())
-# print(target)
+print(target())
+print(target)
+split_line()
 
 # ------------------------------------------------------------------------
 '''
@@ -56,3 +61,20 @@ print('registry ', registry)
 f1()
 f2()
 f3()
+split_line()
+
+# -----------------------------------------------------------------------
+'''
+字节码
+'''
+from dis import dis
+
+
+def f5():
+    print('running f5')
+
+
+print(dis(f5))
+split_line()
+
+# ----------------------------------------------------------------------------
