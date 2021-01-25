@@ -6,6 +6,8 @@
 # @Desc    :
 
 class Vector2d:
+    # __slots__ 仅在有数百万个实例的时候使用
+    __slots__ = ('__x', '__y')
     typecode = 'd'
 
     def __init__(self, x, y):
